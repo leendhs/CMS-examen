@@ -1,0 +1,86 @@
+{% extends "_layout" %} 
+
+ {% block content %}
+
+     <div class="head">
+        <h1>Hej! Welcome to Ekia</h1>
+    </div>
+    
+        {% set categories = craft.entries().section('furnitureCategories').all() %}
+        <div class="all-cat ">
+            <div class="categories">
+                {% for cat in categories %}   
+                <div class="item">
+                <img src="{{cat.bannerImage.one().url}}" alt="">
+                <label><input type="checkbox" name="{{cat}}"/>{{cat}}</label>  
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+
+    <section class="all-furniture">
+        {% set entries = craft.entries().section('furniture') %} 
+        {% for entry in entries %} 
+        <article {% for category in entry.furnitureCategories %}
+            data-{{category}}
+            {% endfor %} class="furniture">
+            
+            <div class="article">
+                <img src="{{entry.bannerImage.one().url}}" alt="">
+                <div>
+                    <h2><a href="{{entry.url}}">{{entry.title}}</a></h2>
+                    <p>€{{entry.price}}</p>
+                    <div class="category">
+                {% for category in entry.furnitureCategories %}
+                    <span>{{category}}</span>
+                {% endfor %} 
+                </div>
+                </div>
+            </div>      
+        </article> 
+        {% endfor %}
+    </section>
+
+
+    <script>
+    let selectedCategories = [];
+ 
+    document.querySelectorAll(".categories input").forEach((element) => {
+      element.addEventListener("change", onSelectCategory);
+    });
+ 
+ 
+    function onSelectCategory(e) {
+      if (selectedCategories.includes(this.name)) {
+        let index = selectedCategories.indexOf(this.name);
+        selectedCategories.splice(index, 1);
+      }
+      else {
+        selectedCategories.push(this.name);
+      }
+      updateGrid();
+    }
+ 
+    function updateGrid() {
+      document.querySelectorAll(".all-furniture article").forEach((el) => {
+        el.style.display = "none";
+        console.log(selectedCategories);
+        for (let i = 0; i < selectedCategories.length; i++) {
+          // console.log(el.hasAttribute("data-" + selectedCategories[i]));
+          if (el.hasAttribute("data-" + selectedCategories[i])) {
+            el.style.display = "flex";
+          }
+        }
+        if (selectedCategories.length == 0) {
+          el.style.display = "flex";
+        }
+      });
+    }
+  </script>
+
+       
+
+   
+    {% endblock  %}
+
+

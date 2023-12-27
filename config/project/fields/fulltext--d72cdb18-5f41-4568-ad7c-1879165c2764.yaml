@@ -1,0 +1,19 @@
+columnSuffix: bcvudjes
+contentColumnType: text
+fieldGroup: af7cffae-1be7-4832-aa19-eb21154b1cd0 # Common
+handle: fulltext
+instructions: null
+name: fulltext
+searchable: false
+settings:
+  byteLimit: null
+  charLimit: null
+  code: false
+  columnType: null
+  initialRows: 4
+  multiline: false
+  placeholder: null
+  uiMode: normal
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText

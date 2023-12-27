@@ -1,0 +1,15 @@
+defaultPlacement: end
+enableVersioning: true
+handle: furnitureCategories
+name: 'furniture categories'
+propagationMethod: all
+siteSettings:
+  babdafee-95ba-4e9b-a204-4806bf7b85c3: # cms-examen
+    enabledByDefault: true
+    hasUrls: true
+    template: furniture-categories/_entry
+    uriFormat: 'furniture-categories/{slug}'
+structure:
+  maxLevels: null
+  uid: e74c2f6e-9ff2-4097-99dd-d2e64561d5d4
+type: structure

@@ -1,0 +1,14 @@
+{% extends "_layout" %} 
+
+ {% block content %}
+    
+    <div class="article">
+        <img src="{{entry.bannerImage.one().url}}" alt="">
+        <div>
+            <h2>{{entry.title}}</h2>
+            <p>€{{entry.price}}</p>
+            <p>{{entry.fulltext}}</p>
+        </div>
+            </div>  
+
+  {% endblock  %}
