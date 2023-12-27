@@ -11,6 +11,7 @@ header {
     display: flex;
     flex-direction: column;
     margin-top: 20px;
+
 }
 
 .head{
@@ -20,7 +21,7 @@ header {
 }
 
 .head h1{
-    padding-top: 320px;
+    text-transform: uppercase;
 }
 
 .logo{
@@ -37,7 +38,6 @@ header {
 
 .navbar a:hover{
     font-weight: bold;
-    color: #5D00B5;
 }
 
 .navbar{
@@ -47,7 +47,6 @@ header {
     margin: -50px;
     padding-top: 10px;
     padding-right: 60px;
-
 }
 
 .categories div{
@@ -58,7 +57,6 @@ header {
 
 .categories div:hover{
     font-weight: bold;
-    color: #5D00B5;
 }
 
 .categories {
@@ -110,6 +108,12 @@ h1 {
     padding-bottom: 20px;
 }
 
+.popular {
+    font-size: 32px;
+    padding-top: 100px;
+    padding-right: 200px;
+}
+
 .all-furniture{
     display:flex;
     flex-direction: row;
@@ -130,17 +134,19 @@ h1 {
 
 .article {
     padding: 20px;
+    overflow: auto;
+    white-space: nowrap;
 }
 
 .article a{
     text-decoration: none;
     color: black;
     font-size: 16px;
+    display: inline-block;
 }
 
 footer {
-    background-color: #5D00B5;
-    color: #F6B36D;
+    background-color: #ffeccd;
 }
 
 .logofooter{
@@ -159,10 +165,6 @@ footer {
 @media (min-width: 800px){
     h1 {
         font-size: 40px;
-    }
-
-    .categories a{
-        font-size: 20px;
     }
     
     .categories img{
@@ -199,7 +201,6 @@ footer {
     }
 
     .navbar a {
-        font-size: 24px;
         padding-left: 30px;
     }
 

@@ -1,4 +1,4 @@
-dateModified: 1702980884
+dateModified: 1703671059
 email:
   fromEmail: r0943181@student.thomasmore.be
   fromName: cms-examen
@@ -26,6 +26,11 @@ meta:
     b41a2e40-87a9-42a8-9361-0cc4e7488d4b: 'furniture categories' # furniture categories
     babdafee-95ba-4e9b-a204-4806bf7b85c3: cms-examen # cms-examen
     d72cdb18-5f41-4568-ad7c-1879165c2764: fulltext # fulltext
+plugins:
+  simplemap:
+    edition: lite
+    enabled: true
+    schemaVersion: 3.4.2
 system:
   edition: solo
   live: true
