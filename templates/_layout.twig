@@ -6,11 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ekia</title>
     {% do craft.app.view.registerCssFile('@web/styles/style.css')%}
+    {% do craft.app.view.registerCssFile('@web/styles/normalize.css')%}
    
 </head>
 <body>
     <header>
-        <img class="logo" src="./img/logo.png" alt="">
+        <img class="logo" src="{{ siteUrl }}img/logo.png" alt=""> 
+        {# deze notering omdat ze met ./styles/logo.png de file niet konden vinden #}
         <nav class="navbar">
             <a href="{{siteUrl}}">home</a>
             <a href="{{siteUrl}}furniture">products</a>
@@ -26,7 +28,7 @@
     {% endblock %}
 
     <footer>
-        <img class="logofooter" src="./img/logo.png" alt="">
+        <img class="logo" src="{{ siteUrl }}img/logo.png" alt="">
         <div>
             <h2>Contact</h2>
             <p>info@ekia.com</p>

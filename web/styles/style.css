@@ -153,6 +153,28 @@ footer {
     justify-content: center;
 }
 
+.img {
+    margin-top: 100px;
+}
+
+.detail {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.info{
+    text-align: center;
+}
+
+.fulltext{
+    text-align: left;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
 @media (max-width: 800px){
 
     .all-furniture{
