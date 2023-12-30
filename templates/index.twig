@@ -18,11 +18,6 @@
                 <div>
                     <h2><a href="{{entry.url}}">{{entry.title}}</a></h2>
                     <p>€{{entry.price}}</p>
-                    <div class="category">
-                {% for category in entry.furnitureCategories %}
-                    <span>{{category}}</span>
-                {% endfor %} 
-                </div>
                 </div>
             </div>      
         </article> 
@@ -30,41 +25,6 @@
     </section>
 
 
-    <script>
-    let selectedCategories = [];
- 
-    document.querySelectorAll(".categories input").forEach((element) => {
-      element.addEventListener("change", onSelectCategory);
-    });
- 
- 
-    function onSelectCategory(e) {
-      if (selectedCategories.includes(this.name)) {
-        let index = selectedCategories.indexOf(this.name);
-        selectedCategories.splice(index, 1);
-      }
-      else {
-        selectedCategories.push(this.name);
-      }
-      updateGrid();
-    }
- 
-    function updateGrid() {
-      document.querySelectorAll(".all-furniture article").forEach((el) => {
-        el.style.display = "none";
-        console.log(selectedCategories);
-        for (let i = 0; i < selectedCategories.length; i++) {
-          // console.log(el.hasAttribute("data-" + selectedCategories[i]));
-          if (el.hasAttribute("data-" + selectedCategories[i])) {
-            el.style.display = "flex";
-          }
-        }
-        if (selectedCategories.length == 0) {
-          el.style.display = "flex";
-        }
-      });
-    }
-  </script>
 
        
 
