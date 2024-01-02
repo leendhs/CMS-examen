@@ -22,10 +22,12 @@ header {
 
 .head h1{
     text-transform: uppercase;
+    padding-top: 320px;
 }
 
 .logo{
     width: 100px;
+    margin-left: 20px;
 }
 
 .navbar a{
@@ -111,7 +113,8 @@ h1 {
 .popular {
     font-size: 32px;
     padding-top: 100px;
-    padding-right: 200px;
+    margin-left: 50px;
+
 }
 
 .all-furniture{
@@ -125,7 +128,7 @@ h1 {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    padding-top: 100px;
+    padding-top: 20px;
 }
 
 .article a:hover{
@@ -134,7 +137,6 @@ h1 {
 
 .article {
     padding: 20px;
-
 }
 
 .article a{
@@ -146,22 +148,30 @@ h1 {
 
 footer {
     background-color: #ffeccd;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer div {
+    margin-left: 20px;
 }
 
 .logofooter{
     width: 100px;
-    justify-content: center;
+    height: 80px;
+    margin-left: 20px;
 }
 
 .img {
     margin-top: 100px;
+    width: 400px;
 }
 
 .detail {
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
     margin-bottom: 50px;
 }
 
@@ -171,8 +181,9 @@ footer {
 
 .fulltext{
     text-align: left;
-    padding-left: 30px;
-    padding-right: 30px;
+    max-width: 500px;
+    margin-left: 50px;
+    margin-right: 50px;
 }
 
 @media (max-width: 800px){
@@ -211,6 +222,12 @@ footer {
 
     .all-furniture{
         flex-wrap:wrap;
+    }
+
+    footer {
+        flex-direction: row;
+        justify-content: center;
+        gap: 100px;
     }
 }
 
