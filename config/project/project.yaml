@@ -1,4 +1,4 @@
-dateModified: 1703671059
+dateModified: 1704298770
 email:
   fromEmail: r0943181@student.thomasmore.be
   fromName: cms-examen
@@ -14,23 +14,61 @@ fs:
 meta:
   __names__:
     0ad6d6ab-56f4-4c6b-a1ac-de08eaee8b31: 'banner image' # banner image
+    2cb805f4-cd61-42bb-9ede-41aef7a749e0: home # home
+    7d41c55b-f27c-4411-8848-d0f53c9381ec: Default # Default
     9e25c8a5-1127-4dbe-996a-7c6a0f140a14: cms-examen # cms-examen
+    29f0238d-f003-4d2b-be2e-b6343e49f7b2: Map # Map
     44e57056-6f1f-4493-b05b-4213003b5399: Default # Default
     051f7ac5-0f3b-4ec5-9f7d-380a9bcaaa80: 'furniture categories' # furniture categories
+    66fa5193-7d65-422a-99e5-58e6d8b36a23: Default # Default
     87c27e83-a3b3-45ae-b4ff-4a70a903087f: furniture-assets # furniture-assets
     307a5794-65ac-4235-aa9e-ccf88201932a: furniture # furniture
+    650b331d-a85e-4ba9-ae14-65e8a48f9ef6: contact # contact
     651a1bc8-e8d1-40db-b092-a43c6f143ae8: Default # Default
+    734c50f9-1d5b-48fe-828f-2812fec5d283: map # map
     0993ae6b-d5e0-4bf0-affe-da2e72d1883d: price # price
+    23419c2a-a7df-4d95-b4ad-10f1351f0ea3: Default # Default
     af7cffae-1be7-4832-aa19-eb21154b1cd0: Common # Common
     b0819d01-0903-4cce-a39f-8216fd89659d: rating # rating
     b41a2e40-87a9-42a8-9361-0cc4e7488d4b: 'furniture categories' # furniture categories
     babdafee-95ba-4e9b-a204-4806bf7b85c3: cms-examen # cms-examen
     d72cdb18-5f41-4568-ad7c-1879165c2764: fulltext # fulltext
 plugins:
+  contact-form:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.0
+    settings:
+      allowAttachments: ''
+      allowedMessageFields: null
+      prependSender: 'On behalf of'
+      prependSubject: 'New message from cms-examen'
+      successFlashMessage: 'Your message has been sent.'
+      toEmail: leen.dehaes@hotmail.com
+  element-api:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.0
   simplemap:
     edition: lite
     enabled: true
     schemaVersion: 3.4.2
+    settings:
+      apiKey: null
+      browserApiKey: null
+      disablePopulateMissingFieldData: false
+      geoLocationAutoRedirect: false
+      geoLocationCacheDuration: 5184000
+      geoLocationService: none
+      geoLocationToken: ''
+      geoService: nominatim
+      geoToken: ''
+      mapTiles: google.terrain
+      mapToken: $ALLOW_ADMIN_CHANGES
+      serverApiKey: null
+      unrestrictedApiKey: null
+      w3wEnabled: false
+      w3wToken: ''
 system:
   edition: solo
   live: true

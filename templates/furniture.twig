@@ -24,7 +24,6 @@
         <article {% for category in entry.furnitureCategories %}
             data-{{category}}
             {% endfor %} class="furniture">
-            
             <div class="article">
                 <img src="{{entry.bannerImage.one().url}}" alt="">
                 <div>
@@ -35,6 +34,7 @@
                     <span>{{category}}</span>
                 {% endfor %} 
                 </div>
+
                 </div>
             </div>      
         </article> 

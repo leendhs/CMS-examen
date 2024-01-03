@@ -1,0 +1,107 @@
+fieldLayouts:
+  74c25202-6f12-4f29-be9c-2de734ffb519:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            elementCondition: null
+            id: null
+            inputType: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: 70defbfb-7486-4f27-8e64-e6b02438738e
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 0ad6d6ab-56f4-4c6b-a1ac-de08eaee8b31 # banner image
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 891d8943-f47a-4f88-88ef-febf1aaab90b
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 0993ae6b-d5e0-4bf0-affe-da2e72d1883d # price
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 48034f87-f24a-4795-906d-d21b4b206656
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: b0819d01-0903-4cce-a39f-8216fd89659d # rating
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 1e48b147-0625-40b0-aa4c-3bfa84d770a8
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: d72cdb18-5f41-4568-ad7c-1879165c2764 # fulltext
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 09a63b35-b68d-41c2-9ec0-a72bf72ab359
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 051f7ac5-0f3b-4ec5-9f7d-380a9bcaaa80 # furniture categories
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 6bd344bf-0f72-4a88-9a12-608dad3c66fb
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: 98c83113-7314-4263-869c-63ea648def72
+        userCondition: null
+handle: default
+hasTitleField: true
+name: Default
+section: 2cb805f4-cd61-42bb-9ede-41aef7a749e0 # home
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+sortOrder: 1
+titleFormat: null
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

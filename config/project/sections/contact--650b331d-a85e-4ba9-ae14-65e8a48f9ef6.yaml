@@ -1,0 +1,12 @@
+defaultPlacement: end
+enableVersioning: true
+handle: contact
+name: contact
+propagationMethod: all
+siteSettings:
+  babdafee-95ba-4e9b-a204-4806bf7b85c3: # cms-examen
+    enabledByDefault: true
+    hasUrls: true
+    template: contact/_entry
+    uriFormat: 'contact/{slug}'
+type: channel
