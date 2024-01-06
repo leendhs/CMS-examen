@@ -1,0 +1,36 @@
+{% extends "_layout" %}
+
+{% block content %}
+
+    {% set entry = craft.entries.section('contact').one() %}
+    
+    <div class="container">
+        <h3 class="opening-hours-heading">Opening Hours</h3>
+        <dl class="opening-hours-list">
+            {% set openingHours = entry.openingHours %}
+            {% for day in openingHours %}
+                <dt class="day-name">{{ day.name }}</dt>
+                <dd class="day-hours">
+                    {% if day.isBlank %}
+                        Closed
+                    {% else %}
+                        {{ day.open|time }} - {{ day.close|time }}
+                    {% endif %}
+                </dd>
+            {% endfor %}
+        </dl>
+
+        <h3 class="today today-heading">Today’s Hours</h3>
+        {% set today = openingHours.today %}
+        {% if today.isBlank %}
+            <p class="closed-message">Sorry, we’re closed today.</p>
+            {% set tomorrow = openingHours.tomorrow %}
+            {% if not tomorrow.isBlank %}
+                <p class="tomorrow-opening">We’ll be back open tomorrow at {{ tomorrow.open|time }}.</p>
+            {% endif %}
+        {% else %}
+            <p class="today-hours">We’re open from {{ today.open|time }} to {{ today.close|time }} today.</p>
+        {% endif %}
+    </div>
+
+{% endblock %}

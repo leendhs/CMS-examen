@@ -3,6 +3,7 @@
     "craftcms/cms": "^4.4.0",
     "craftcms/contact-form": "3.0.1",
     "craftcms/element-api": "3.0.1.1",
+    "craftcms/store-hours": "3.0.0",
     "ether/simplemap": "4.0.4",
     "vlucas/phpdotenv": "^5.4.0"
   },

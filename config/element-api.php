@@ -19,6 +19,7 @@ return [
                         'fulltext' => $entry->fulltext,
                         'price' => $entry->price,
                         'rating' => $entry->rating,
+                        'cat' => $entry->furnitureCategories,
                        'bannerImg' => str_replace("https","http",$entry->bannerImage->one()->getUrl()),
                     ];
                 },

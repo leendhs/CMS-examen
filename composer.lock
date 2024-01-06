@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "19870693fd0bd4ed033ce30209601782",
+    "content-hash": "0e5b51650034ff7879578f271b91a6ec",
     "packages": [
         {
             "name": "cebe/markdown",
@@ -491,11 +491,11 @@
         },
         {
             "name": "craftcms/cms",
-            "version": "4.5.13",
+            "version": "4.5.14",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/craftcms/cms/zipball/c94af041eaca79540eac8ce4352e7d5737de6785",
-                "reference": "c94af041eaca79540eac8ce4352e7d5737de6785",
+                "url": "https://api.github.com/repos/craftcms/cms/zipball/27277014272e8d372f0294bee60b274816f336b9",
+                "reference": "27277014272e8d372f0294bee60b274816f336b9",
                 "shasum": ""
             },
             "require": {
@@ -583,7 +583,7 @@
                 "docs": "https://craftcms.com/docs/4.x/",
                 "rss": "https://github.com/craftcms/cms/releases.atom"
             },
-            "time": "2023-12-15T19:23:31+00:00"
+            "time": "2024-01-02T17:52:44+00:00"
         },
         {
             "name": "craftcms/contact-form",
@@ -751,6 +751,59 @@
                 "yii2"
             ],
             "time": "2023-09-20T01:56:57+00:00"
+        },
+        {
+            "name": "craftcms/store-hours",
+            "version": "3.0.0",
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/craftcms/store-hours/zipball/97246a6968d01dc6802b5566bdeaf7d4796cef4a",
+                "reference": "97246a6968d01dc6802b5566bdeaf7d4796cef4a",
+                "shasum": ""
+            },
+            "require": {
+                "craftcms/cms": "^4.0.0-alpha.1",
+                "php": "^8.0.2"
+            },
+            "type": "craft-plugin",
+            "extra": {
+                "name": "Store Hours",
+                "handle": "store-hours",
+                "schemaVersion": "1.0.2",
+                "documentationUrl": "https://github.com/craftcms/store-hours/blob/v2/README.md"
+            },
+            "autoload": {
+                "psr-4": {
+                    "craft\\storehours\\": "src/"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Pixel & Tonic",
+                    "homepage": "https://pixelandtonic.com/"
+                }
+            ],
+            "description": "This plugin adds a new “Store Hours” field type to Craft, for collecting the opening and closing hours of a business for each day of the week.",
+            "keywords": [
+                "cms",
+                "craftcms",
+                "hours",
+                "html",
+                "json",
+                "store",
+                "yii2"
+            ],
+            "support": {
+                "email": "support@craftcms.com",
+                "issues": "https://github.com/craftcms/store-hours/issues?state=open",
+                "source": "https://github.com/craftcms/store-hours",
+                "docs": "https://github.com/craftcms/store-hours/blob/v2/README.md",
+                "rss": "https://github.com/craftcms/store-hours/commits/v2.atom"
+            },
+            "time": "2022-05-03T22:36:01+00:00"
         },
         {
             "name": "creocoder/yii2-nested-sets",
@@ -2269,11 +2322,11 @@
         },
         {
             "name": "phpstan/phpdoc-parser",
-            "version": "1.24.5",
+            "version": "1.25.0",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpstan/phpdoc-parser/zipball/fedf211ff14ec8381c9bf5714e33a7a552dd1acc",
-                "reference": "fedf211ff14ec8381c9bf5714e33a7a552dd1acc",
+                "url": "https://api.github.com/repos/phpstan/phpdoc-parser/zipball/bd84b629c8de41aa2ae82c067c955e06f1b00240",
+                "reference": "bd84b629c8de41aa2ae82c067c955e06f1b00240",
                 "shasum": ""
             },
             "require": {
@@ -2291,7 +2344,7 @@
                 "MIT"
             ],
             "description": "PHPDoc parser with support for nullable, intersection and generic types",
-            "time": "2023-12-16T09:33:33+00:00"
+            "time": "2024-01-04T17:06:16+00:00"
         },
         {
             "name": "pixelandtonic/imagine",

@@ -1,4 +1,4 @@
-dateModified: 1704298770
+dateModified: 1704537057
 email:
   fromEmail: r0943181@student.thomasmore.be
   fromName: cms-examen
@@ -15,6 +15,7 @@ meta:
   __names__:
     0ad6d6ab-56f4-4c6b-a1ac-de08eaee8b31: 'banner image' # banner image
     2cb805f4-cd61-42bb-9ede-41aef7a749e0: home # home
+    5a62d376-b828-45e0-b25f-a3e6a880353e: 'opening hours' # opening hours
     7d41c55b-f27c-4411-8848-d0f53c9381ec: Default # Default
     9e25c8a5-1127-4dbe-996a-7c6a0f140a14: cms-examen # cms-examen
     29f0238d-f003-4d2b-be2e-b6343e49f7b2: Map # Map
@@ -69,6 +70,10 @@ plugins:
       unrestrictedApiKey: null
       w3wEnabled: false
       w3wToken: ''
+  store-hours:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.2
 system:
   edition: solo
   live: true

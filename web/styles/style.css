@@ -75,7 +75,6 @@ header {
 
 .categories label:has(input:checked) {
     font-weight: bold;
-    color: #5D00B5;
 }
 
 .categories img{
@@ -121,6 +120,7 @@ h1 {
     display:flex;
     flex-direction: row;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 .furniture {
@@ -186,12 +186,44 @@ footer div {
     margin-right: 50px;
 }
 
-@media (max-width: 800px){
 
-    .all-furniture{
-        flex-wrap:wrap;
-    }
+.container {
+    max-width: 80%;
+    margin: 20px auto;
+    padding: 20px;
+    text-align: center;
+    border: 1px solid #ddd; 
+    border-radius: 5px; 
+    margin-top: 80px;
+    margin-bottom: 80px;
 }
+
+h3 {
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+dl {
+    margin-bottom: 20px;
+}
+
+dt {
+    font-weight: bold;
+}
+
+dd {
+    margin-bottom: 10px;
+}
+
+p {
+    color: #555;
+}
+
+.today {
+    margin-top: 30px;
+}
+
 
 
 @media (min-width: 800px){
@@ -229,6 +261,10 @@ footer div {
         justify-content: center;
         gap: 100px;
     }
+
+    .container{
+        max-width: 70%;
+    }
 }
 
 
@@ -257,5 +293,9 @@ footer div {
 
     .all-furniture{
         flex-wrap:wrap;
+    }
+
+    .container{
+        max-width: 50%;
     }
 }

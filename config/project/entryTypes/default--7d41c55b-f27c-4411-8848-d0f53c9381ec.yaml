@@ -31,6 +31,18 @@ fieldLayouts:
             userCondition: null
             warning: null
             width: 100
+          -
+            elementCondition: null
+            fieldUid: 5a62d376-b828-45e0-b25f-a3e6a880353e # opening hours
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: fc8d15d9-18fb-4b10-b202-ef7e86a69151
+            userCondition: null
+            warning: null
+            width: 100
         name: Content
         uid: dc5fc0fa-0abf-4dd2-96d2-3569e06bebb2
         userCondition: null

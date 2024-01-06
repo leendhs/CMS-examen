@@ -1,8 +1,8 @@
 {% extends "_layout" %} 
 
- {% block content %}
+{% block content %}
 
-     <div class="head">
+    <div class="head">
         <h1>Hej! Welcome to Ekia</h1>
     </div>
     <h2 class="popular">Right now at Ekia</h2>
@@ -10,32 +10,22 @@
         {% set entries = craft.entries().section('home') %} 
         {% for entry in entries %} 
 
-        <article {% for category in entry.furnitureCategories %}
-            data-{{category}}
+            <article {% for category in entry.furnitureCategories %}
+                data-{{category}}
             {% endfor %} class="furniture">
-            <div class="article">
-                <img src="{{entry.bannerImage.one().url}}" alt="">
-                <div>
-                    <h2><a href="{{entry.url}}">{{entry.title}}</a></h2>
-                    <p>€{{entry.price}}</p>
-                    {% for category in entry.furnitureCategories %}
-                    <span>{{category}}</span>
-                {% endfor %} 
-                </div>
-            </div>      
-        </article> 
+                <div class="article">
+                    <img src="{{ entry.bannerImage.one().url }}" alt="">
+                    <div>
+                        <h2><a href="{{ entry.url }}">{{ entry.title }}</a></h2>
+                        <p>€{{ entry.price }}</p>
+                        {% for category in entry.furnitureCategories %}
+                            <span>{{ category }}</span>
+                        {% endfor %} 
+                    </div>
+                </div>      
+            </article> 
 
-        {% endfor %}
+        {% endfor %} 
     </section>
-     {# <section class="map">
-        {% set entries = craft.entries().section('map') %} 
-        {% for entry in entries %} 
 
-        <div>{{entry.map}}</div>
-        {% endfor %}
-    </section> #}
-
-   
-    {% endblock  %}
-
-
+{% endblock %}
