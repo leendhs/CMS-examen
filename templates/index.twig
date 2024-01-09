@@ -18,9 +18,11 @@
                     <div>
                         <h2><a href="{{ entry.url }}">{{ entry.title }}</a></h2>
                         <p>€{{ entry.price }}</p>
-                        {% for category in entry.furnitureCategories %}
-                            <span>{{ category }}</span>
-                        {% endfor %} 
+                        <div class="category">
+                {% for category in entry.furnitureCategories %}
+                    <span>{{category}}</span>
+                {% endfor %} 
+                </div>
                     </div>
                 </div>      
             </article> 
