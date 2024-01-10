@@ -1,4 +1,4 @@
-dateModified: 1704537057
+dateModified: 1704802418
 email:
   fromEmail: r0943181@student.thomasmore.be
   fromName: cms-examen
@@ -21,12 +21,10 @@ meta:
     29f0238d-f003-4d2b-be2e-b6343e49f7b2: Map # Map
     44e57056-6f1f-4493-b05b-4213003b5399: Default # Default
     051f7ac5-0f3b-4ec5-9f7d-380a9bcaaa80: 'furniture categories' # furniture categories
-    66fa5193-7d65-422a-99e5-58e6d8b36a23: Default # Default
     87c27e83-a3b3-45ae-b4ff-4a70a903087f: furniture-assets # furniture-assets
     307a5794-65ac-4235-aa9e-ccf88201932a: furniture # furniture
     650b331d-a85e-4ba9-ae14-65e8a48f9ef6: contact # contact
     651a1bc8-e8d1-40db-b092-a43c6f143ae8: Default # Default
-    734c50f9-1d5b-48fe-828f-2812fec5d283: map # map
     0993ae6b-d5e0-4bf0-affe-da2e72d1883d: price # price
     23419c2a-a7df-4d95-b4ad-10f1351f0ea3: Default # Default
     af7cffae-1be7-4832-aa19-eb21154b1cd0: Common # Common

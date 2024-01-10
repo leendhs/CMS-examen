@@ -9,15 +9,14 @@
     <section class="all-furniture">
         {% set entries = craft.entries().section('home') %} 
         {% for entry in entries %} 
-
             <article {% for category in entry.furnitureCategories %}
                 data-{{category}}
             {% endfor %} class="furniture">
                 <div class="article">
                     <img src="{{ entry.bannerImage.one().url }}" alt="">
                     <div>
-                        <h2><a href="{{ entry.url }}">{{ entry.title }}</a></h2>
-                        <p>€{{ entry.price }}</p>
+                        <h2><a href="{{entry.url}}">{{entry.title}}</a></h2>
+                        <p>€{{entry.price}}</p>
                         <div class="category">
                 {% for category in entry.furnitureCategories %}
                     <span>{{category}}</span>
