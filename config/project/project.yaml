@@ -1,4 +1,4 @@
-dateModified: 1704802418
+dateModified: 1704882429
 email:
   fromEmail: r0943181@student.thomasmore.be
   fromName: cms-examen
@@ -18,7 +18,6 @@ meta:
     5a62d376-b828-45e0-b25f-a3e6a880353e: 'opening hours' # opening hours
     7d41c55b-f27c-4411-8848-d0f53c9381ec: Default # Default
     9e25c8a5-1127-4dbe-996a-7c6a0f140a14: cms-examen # cms-examen
-    29f0238d-f003-4d2b-be2e-b6343e49f7b2: Map # Map
     44e57056-6f1f-4493-b05b-4213003b5399: Default # Default
     051f7ac5-0f3b-4ec5-9f7d-380a9bcaaa80: 'furniture categories' # furniture categories
     87c27e83-a3b3-45ae-b4ff-4a70a903087f: furniture-assets # furniture-assets
